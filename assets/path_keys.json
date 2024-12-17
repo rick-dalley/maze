@@ -1,0 +1,18 @@
+[
+  { "name": "Top Dead End", "char": "╵" },
+  { "name": "Bottom Dead End", "char": "╷" },
+  { "name": "Left Dead End", "char": "╶" },
+  { "name": "Right Dead End", "char": "╴" },
+  { "name": "Crossing", "char": "┼" },
+  { "name": "Left T-junction", "char": "┤" },
+  { "name": "Right T-junction", "char": "├" },
+  { "name": "Bottom T-junction", "char": "┴" },
+  { "name": "Top T-junction", "char": "┬" },
+  { "name": "Vertical path", "char": "│" },
+  { "name": "Horizontal path", "char": "─" },
+  { "name": "Bottom-left corner", "char": "└" },
+  { "name": "Bottom-right corner", "char": "┘" },
+  { "name": "Top-left corner", "char": "┌" },
+  { "name": "Top-right corner", "char": "┐" },
+  { "name": "isolated room", "char": "." }
+]

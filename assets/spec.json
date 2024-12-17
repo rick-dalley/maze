@@ -1,0 +1,412 @@
+{
+  "tile_size": 270,
+  "columns": 8,
+  "rows": 10,
+  "files": [
+    {
+      "name": "MappingTable1",
+      "row_labels": [
+        {
+          "name": "dead_end",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 1, "path": "↑", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑" }
+          ]
+        },
+        {
+          "name": "left",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┐", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "┐", "weight": 1, "room": false },
+            { "index": 7, "path": "┐", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top",
+          "tiles": [
+            { "index": 0, "path": "│", "weight": 1, "room": false },
+            { "index": 1, "path": "│", "weight": 1, "room": false },
+            { "index": 2, "path": "│", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "│", "weight": 1, "room": false },
+            { "index": 6, "path": "│", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "right",
+          "tiles": [
+            { "index": 0, "path": "┌", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┌", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "┌", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left",
+          "tiles": [
+            { "index": 0, "path": "┤", "weight": 1, "room": false },
+            { "index": 1, "path": "┤", "weight": 1, "room": false },
+            { "index": 2, "path": "┤", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "│", "weight": 1, "room": false },
+            { "index": 5, "path": "┐", "weight": 1, "room": false },
+            { "index": 6, "path": "│", "weight": 1, "room": false },
+            { "index": 7, "path": "┐", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "left_right",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┬", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "┐", "weight": 1, "room": false },
+            { "index": 5, "path": "┌", "weight": 1, "room": false },
+            { "index": 6, "path": "┬", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_right",
+          "tiles": [
+            { "index": 0, "path": "┌", "weight": 1, "room": false },
+            { "index": 1, "path": "│", "weight": 1, "room": false },
+            { "index": 2, "path": "├", "weight": 1, "room": false },
+            { "index": 3, "path": "├", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "┌", "weight": 1, "room": false },
+            { "index": 7, "path": "│", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left_right",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 1, "path": "┬", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "│", "weight": 1, "room": false },
+            { "index": 5, "path": "┼", "weight": 1, "room": false },
+            { "index": 6, "path": "├", "weight": 1, "room": false },
+            { "index": 7, "path": "┤", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "secret_room",
+          "tiles": [
+            { "index": 0, "path": "→", "weight": 1, "room": false },
+            { "index": 1, "path": "┘", "weight": 1, "room": false },
+            { "index": 2, "path": "─", "weight": 1, "room": false },
+            { "index": 3, "path": "└", "weight": 1, "room": false },
+            { "index": 4, "path": "←", "weight": 1, "room": false },
+            { "index": 5, "path": "↓", "weight": 1, "room": false },
+            { "index": 6, "path": "┴", "weight": 1, "room": false },
+            { "index": 7, "path": ".", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "stair_room",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┬", "weight": 1, "room": false },
+            { "index": 3, "path": "┤", "weight": 1, "room": false },
+            { "index": 4, "path": "├", "weight": 1, "room": false },
+            { "index": 5, "path": "┼", "weight": 1, "room": false },
+            { "index": 6, "path": "┼", "weight": 1, "room": false },
+            { "index": 7, "path": "┼", "weight": 1, "room": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MappingTable2",
+      "row_labels": [
+        {
+          "name": "dead_end",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 1, "path": "↑", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "left",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┐", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "┐", "weight": 1, "room": false },
+            { "index": 5, "path": "┐", "weight": 1, "room": false },
+            { "index": 6, "path": "┐", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top",
+          "tiles": [
+            { "index": 0, "path": "│", "weight": 1, "room": false },
+            { "index": 1, "path": "│", "weight": 1, "room": false },
+            { "index": 2, "path": "│", "weight": 1, "room": false },
+            { "index": 3, "path": "│", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "│", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "right",
+          "tiles": [
+            { "index": 0, "path": "┌", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┌", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "┌", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left",
+          "tiles": [
+            { "index": 0, "path": "┤", "weight": 1, "room": false },
+            { "index": 1, "path": "┤", "weight": 1, "room": false },
+            { "index": 2, "path": "│", "weight": 1, "room": false },
+            { "index": 3, "path": "┐", "weight": 1, "room": false },
+            { "index": 4, "path": "┤", "weight": 1, "room": false },
+            { "index": 5, "path": "┐", "weight": 1, "room": false },
+            { "index": 6, "path": "│", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "left_right",
+          "tiles": [
+            { "index": 0, "path": "┬", "weight": 1, "room": false },
+            { "index": 1, "path": "┬", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "┐", "weight": 1, "room": false },
+            { "index": 7, "path": "┌", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_right",
+          "tiles": [
+            { "index": 0, "path": "│", "weight": 1, "room": false },
+            { "index": 1, "path": "├", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 3, "path": "├", "weight": 1, "room": false },
+            { "index": 4, "path": "┌", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "│", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left_right",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "│", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┬", "weight": 1, "room": false },
+            { "index": 7, "path": "┤", "weight": 1, "room": false },
+            { "index": 6, "path": "├", "weight": 1, "room": false },
+            { "index": 5, "path": "┼", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "secret_room",
+          "tiles": [
+            { "index": 0, "path": "→", "weight": 1, "room": false },
+            { "index": 1, "path": "←", "weight": 1, "room": false },
+            { "index": 2, "path": "─", "weight": 1, "room": false },
+            { "index": 1, "path": "┘", "weight": 1, "room": false },
+            { "index": 3, "path": "└", "weight": 1, "room": false },
+            { "index": 6, "path": "┴", "weight": 1, "room": false },
+            { "index": 5, "path": "↓", "weight": 1, "room": false },
+            { "index": 7, "path": ".", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "stair_room",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┬", "weight": 1, "room": false },
+            { "index": 3, "path": "┤", "weight": 1, "room": false },
+            { "index": 4, "path": "├", "weight": 1, "room": false },
+            { "index": 5, "path": "┼", "weight": 1, "room": false },
+            { "index": 6, "path": "┼", "weight": 1, "room": false },
+            { "index": 7, "path": "┼", "weight": 1, "room": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MappingTable3",
+      "row_labels": [
+        {
+          "name": "dead_end",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 1, "path": "↑", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "left",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┐", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "┐", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "┐", "weight": 1, "room": false },
+            { "index": 7, "path": "┐", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top",
+          "tiles": [
+            { "index": 0, "path": "│", "weight": 1, "room": false },
+            { "index": 1, "path": "│", "weight": 1, "room": false },
+            { "index": 2, "path": "│", "weight": 1, "room": false },
+            { "index": 3, "path": "↑", "weight": 1, "room": false },
+            { "index": 4, "path": "│", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "│", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "right",
+          "tiles": [
+            { "index": 0, "path": "┌", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "↑", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "┌", "weight": 1, "room": false },
+            { "index": 5, "path": "↑", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "┌", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left",
+          "tiles": [
+            { "index": 0, "path": "┤", "weight": 1, "room": false },
+            { "index": 1, "path": "┤", "weight": 1, "room": false },
+            { "index": 2, "path": "│", "weight": 1, "room": false },
+            { "index": 3, "path": "│", "weight": 1, "room": false },
+            { "index": 4, "path": "┐", "weight": 1, "room": false },
+            { "index": 5, "path": "┐", "weight": 1, "room": false },
+            { "index": 6, "path": "↑", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "left_right",
+          "tiles": [
+            { "index": 0, "path": "┬", "weight": 1, "room": false },
+            { "index": 1, "path": "┬", "weight": 1, "room": false },
+            { "index": 2, "path": "┐", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "↑", "weight": 1, "room": false },
+            { "index": 5, "path": "┬", "weight": 1, "room": false },
+            { "index": 6, "path": "┐", "weight": 1, "room": false },
+            { "index": 7, "path": "┌", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_right",
+          "tiles": [
+            { "index": 0, "path": "├", "weight": 1, "room": false },
+            { "index": 1, "path": "├", "weight": 1, "room": false },
+            { "index": 2, "path": "├", "weight": 1, "room": false },
+            { "index": 3, "path": "┌", "weight": 1, "room": false },
+            { "index": 4, "path": "┌", "weight": 1, "room": false },
+            { "index": 5, "path": "│", "weight": 1, "room": false },
+            { "index": 6, "path": "│", "weight": 1, "room": false },
+            { "index": 7, "path": "↑", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "top_left_right",
+          "tiles": [
+            { "index": 0, "path": "↑", "weight": 1, "room": false },
+            { "index": 1, "path": "┐", "weight": 1, "room": false },
+            { "index": 2, "path": "┌", "weight": 1, "room": false },
+            { "index": 3, "path": "│", "weight": 1, "room": false },
+            { "index": 4, "path": "┤", "weight": 1, "room": false },
+            { "index": 5, "path": "├", "weight": 1, "room": false },
+            { "index": 6, "path": "┬", "weight": 1, "room": false },
+            { "index": 7, "path": "┼", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "secret_room",
+          "tiles": [
+            { "index": 0, "path": "→", "weight": 1, "room": false },
+            { "index": 1, "path": "←", "weight": 1, "room": false },
+            { "index": 2, "path": "─", "weight": 1, "room": false },
+            { "index": 3, "path": "┘", "weight": 1, "room": false },
+            { "index": 4, "path": "└", "weight": 1, "room": false },
+            { "index": 5, "path": "┴", "weight": 1, "room": false },
+            { "index": 6, "path": "↓", "weight": 1, "room": false },
+            { "index": 7, "path": ".", "weight": 1, "room": false }
+          ]
+        },
+        {
+          "name": "stair_room",
+          "tiles": [
+            { "index": 0, "path": "┐", "weight": 1, "room": false },
+            { "index": 1, "path": "┌", "weight": 1, "room": false },
+            { "index": 2, "path": "┬", "weight": 1, "room": false },
+            { "index": 3, "path": "┤", "weight": 1, "room": false },
+            { "index": 4, "path": "├", "weight": 1, "room": false },
+            { "index": 5, "path": "┼", "weight": 1, "room": false },
+            { "index": 6, "path": "┼", "weight": 1, "room": false },
+            { "index": 7, "path": "┼", "weight": 1, "room": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
