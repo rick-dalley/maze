@@ -8,18 +8,34 @@ const String wordsImagePath = "assets/tiles/Words.png";
 
 class Tile {
   final String filePath;
+  final String rowName;
   final String mapPath;
   late final img.Image bitmap;
   final bool hasRoom;
   final int weight;
-  Tile({required this.filePath, required this.mapPath, required this.weight, required this.hasRoom});
+  final int colIndex;
+  Tile(
+      {required this.filePath,
+      required this.mapPath,
+      required this.weight,
+      required this.hasRoom,
+      required this.rowName,
+      required this.colIndex});
 
   // Constructor to create Tile from JSON
-  factory Tile.fromJson(String mapDir, String rowFolder, int colIndex, String path, int weight, bool hasRoom) {
+  factory Tile.fromJson(Map<String, dynamic> tileJson, String mapDir, String rowFolder) {
     String appPath = Directory.current.path;
-    String filePath = "$appPath/assets/tiles/$mapDir/$rowFolder/tile$colIndex.png";
+    String filePath = "$appPath/assets/tiles/$mapDir/$rowFolder/tile${tileJson['index']}.png";
     final img.Image bitmap = img.decodeImage(File(filePath).readAsBytesSync())!;
-    return Tile(filePath: filePath, mapPath: path, weight: weight, hasRoom: hasRoom)..bitmap = bitmap;
+
+    return Tile(
+        filePath: filePath,
+        mapPath: tileJson['path'],
+        weight: tileJson['weight'] ?? 1,
+        hasRoom: tileJson['room'] ?? false,
+        rowName: rowFolder,
+        colIndex: tileJson['index'])
+      ..bitmap = bitmap;
   }
 }
 
@@ -29,8 +45,6 @@ class TilesMap {
   late img.Image endOverlay;
   // Constructor that initializes the map
   TilesMap();
-
-  // Function to build a Map<String, List<Tile>> from JSON data
   Map<String, List<Tile>> buildTilesMap(String mapMaze, Map<String, dynamic> jsonData) {
     Map<String, List<Tile>> tempTilesMap = {};
 
@@ -44,19 +58,15 @@ class TilesMap {
           String rowFolder = rowLabel['name'];
           List tiles = rowLabel['tiles'];
 
-          for (var tile in tiles) {
-            int colIndex = tile['index'];
-            String path = tile['path'];
-            int weight = tile["weight"] ?? 1;
-            bool room = tile['room'] ?? false;
-            // Create Tile
-            Tile newTile = Tile.fromJson(mapDir, rowFolder, colIndex, path, weight, room);
+          for (var tileJson in tiles) {
+            // Create Tile using the JSON directly
+            Tile newTile = Tile.fromJson(tileJson, mapDir, rowFolder);
 
             // Add Tile to the map
-            if (!tempTilesMap.containsKey(path)) {
-              tempTilesMap[path] = [];
+            if (!tempTilesMap.containsKey(newTile.mapPath)) {
+              tempTilesMap[newTile.mapPath] = [];
             }
-            tempTilesMap[path]!.add(newTile);
+            tempTilesMap[newTile.mapPath]!.add(newTile);
           }
         }
       }

@@ -4,9 +4,12 @@ import 'package:maze/maze_solver.dart';
 Future<void> main(List<String> arguments) async {
   // Example usage: Find a random Tile for a specific mapPath
 
-  MazeGenerator generator = await MazeGenerator.create(25, 15, 0.9, "MappingTable3");
-  generator.generateMaze();
+  MazeGenerator generator = await MazeGenerator.create(25, 18, 0.9, "MappingTable2");
 
+  Stopwatch sw = Stopwatch();
+  sw.start();
+
+  generator.generateMaze();
   // Pass start and end positions to the solver
   MazeSolver solver = MazeSolver(
     generator.grid,
@@ -17,6 +20,8 @@ Future<void> main(List<String> arguments) async {
   );
   // save the maze as a bitmap
   generator.saveMaze("maze.png");
+  sw.stop();
+  print("Elapsed:${sw.elapsedMilliseconds}");
 
   print("\nMaze with Solution:");
   print("Generated Maze:");

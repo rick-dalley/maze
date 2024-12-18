@@ -152,20 +152,31 @@ class MazeGenerator {
   }
 
   Future<void> saveMaze(String targetLocation) async {
+    // Place the tile on the canvas
+
     for (int y = 0; y < height; y++) {
       for (int x = 0; x < width; x++) {
         if (grid[y][x] == 1) continue; // Skip walls
         // Determine the tile for this position
-        // String characterPath = determinePathCharacter(x, y);
-        // Tile? tile = tilesMap.findTile(characterPath);
         Tile? tile = determineTile(x, y);
         if (tile != null) {
+          if (tile.mapPath == ".") {
+            continue;
+          }
           int posX = x * tileSize;
           int posY = y * tileSize;
 
-          // Place the tile on the canvas
-          img.compositeImage(background, tile.bitmap, dstX: posX, dstY: posY);
+          // img.Image textOverlay = img.Image(
+          //     width: tileSize, height: tileSize, numChannels: 4, backgroundColor: img.ColorFloat16.rgba(0, 0, 0, 0));
+          // if (tile.rowName == "secret_room") {
+          //   img.drawString(textOverlay, "${arialRepresentation[tile.mapPath]}  ${tile.colIndex}",
+          //       font: img.arial48, // Center vertically
+          //       color: img.ColorFloat16.rgba(1, 0, 0, 1) // Bright red text
+          //       );
+          // }
 
+          img.compositeImage(background, tile.bitmap, dstX: posX, dstY: posY);
+          // img.compositeImage(background, textOverlay, dstX: posX, dstY: posY);
           // Overlay "Start" or "End" text if applicable
           if (x == startX && y == startY) {
             // Overlay startOverlay onto outputImage
@@ -184,10 +195,10 @@ class MazeGenerator {
               dstY: posY, // Y position for the overlay
             );
           }
+          // Draw the string directly on the background
         }
       }
     }
-
     // Save the final stitched image
     File outputFile = File(targetLocation);
     outputFile.writeAsBytesSync(img.encodePng(background));
@@ -264,8 +275,26 @@ class MazeGenerator {
     if (up && left) return "┘"; // Bottom-right corner
     if (down && right) return "┌"; // Top-left corner
     if (down && left) return "┐"; // Top-right corner
-    return " "; // Default (shouldn't happen)
+    return "."; // Default (shouldn't happen)
   }
 
+  // Map<String, String> arialRepresentation = {
+  //   "┼": "X",
+  //   "┤": "T L",
+  //   "├": "T R",
+  //   "┴": "T B",
+  //   "┬": "T T",
+  //   "│": "S |",
+  //   "─": "S -",
+  //   "└": "CBR",
+  //   "┘": "CBL",
+  //   "┌": "CTR",
+  //   "┐": "CTL",
+  //   "↓": "D B",
+  //   "↑": "D T",
+  //   "→": "D R",
+  //   "←": "D L",
+  //   ",": "[*]",
+  // };
   // Example helper: Check bounds (you already have this)
 }
